@@ -17,6 +17,12 @@ html {
   background-color: rgba(230,223,219, .7);
 }
 
+.hello {
+  font-size: 4em;
+  margin: 0;
+  padding: 0.1em 0 0;
+}
+
 mark {
   background-color: rgb(194,154,133);
 }
