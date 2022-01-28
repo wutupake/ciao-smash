@@ -2,7 +2,7 @@ html {
   color: rgb(83,64,59);
   font-size: 1.6em;
   line-height: 1.4;
-  background: transparent url(/img/disco-ball.gif) top center no-repeat;
+  background: transparent url('/img/disco-ball.gif') top center no-repeat;
   background-size: cover;
 }
 
