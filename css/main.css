@@ -18,9 +18,10 @@ body {
 }
 
 .hello {
-  font-size: clamp(2.2em, 12vw, 4em);
+  font-size: clamp(2.2em, 18vw, 4em);
   margin: 0;
   padding: 0.1em 0 0;
+  animation: 1.2s shake infinite alternate;
 }
 
 mark {
@@ -53,7 +54,7 @@ figure {
 
 figcaption {
   margin-top: 1em;
-  font-size: .7em;
+  font-size: .8em;
 }
 
 .meme {
@@ -64,9 +65,18 @@ figcaption {
 textarea {
   border-radius: 3px;
   border: 3px solid rgb(194,154,133);
-  font-size: .5em;
+  font-size: .6em;
   width: calc(100% - 10px);
   height: 460px;
   margin: 1em 0;
   resize: vertical;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-10deg); }
+  5% { transform: skewX(10deg); }
+  10% { transform: skewX(-10deg); }
+  15% { transform: skewX(10deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
 }
