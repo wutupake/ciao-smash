@@ -18,7 +18,7 @@ body {
 }
 
 .hello {
-  font-size: clamp(2.2em, 18vw, 4em);
+  font-size: clamp(2.2em, 18vw, 3.94em);
   margin: 0;
   padding: 0.1em 0 0;
   animation: 1.2s shake infinite alternate;
