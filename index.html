@@ -16,40 +16,117 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
 </head>
 
 <body>
 
   <section class="wrap">
     <h1 class="hello">Ciao Smash!</h1>
-    <p>Lorem ipsum dolor sit amet, <mark>consectetur adipiscing elit</mark>, sed do eiusmod tempo.</p>
-    <p>Et dolore magna aliqua. Nisl tincidunt eget nullam non <em>lorem ipsum dolor sit amet</em> quis risus <a href="#">link to something</a> sed vulputate odio ut enim blandit.</p>
+    <p>Ci fa molto piacere rivederti, <mark>ci sei mancato tanto tanto</mark>. Si sente davvero la tua mancanza ora che non ci sei più. Abbiamo la gola arsa a furia di aspettare. Finalmente paghi da bere.</p>
 
     <figure>
       <img class="meme" src="img/laser.gif" alt="">
-      <figcaption>Occhi puntati al grande sogno.</figcaption>
+      <figcaption>Occhi puntati sull'obiettivo.</figcaption>
     </figure>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non.</p>
+    <p>Ci piacerebbe scrivere un biglietto come tu fai i discorsi. Sai come, no? Cominci raccontando una cosa, poi passi a un'altra, poi ti distrai e racconti un dettaglio su un'altra storia e concludi finendo un discorso che avevi cominciato con un'altra persona.</p>
+
+    <figure>
+      <img class="meme" src="img/complicated.webp" alt="">
+    </figure>
+
+    <p>No. Non riusciamo a farlo. Troppo difficile.</p>
 
     <figure>
       <blockquote>
-        "Quis risus sed vulputate odio ut enim blandit."
+        "L'idea di Inception mi è venuta dopo aver parlato con Massimo."
       </blockquote>
-      <figcaption>fonte: Lorem ipsum.</figcaption>
+      <figcaption>Christopher Nolan</figcaption>
     </figure>
 
-    <p>Ac tortor dignissim convallis aenean et. Mauris ultrices eros in cursus turpis massa tincidunt dui ut.</p>
+    <p>Ormai sei andato via da un bel po' e tutte le tue cose, che non sapevi nemmeno di aver dimenticato, le abbiamo vendute al miglior offerente.</p>
+    <p>Per rimediare mettiamo un po' di foto a caso vediamo se riusciamo a distrarti.</p>
 
-<textarea readonly>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/smash/01.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/02.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/03.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/04.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/05.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/06.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/07.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/08.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/09.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/10.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/11.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/12.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/13.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/14.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/15.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/16.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/smash/17.jpg" alt=""></div>
+      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+<!-- <textarea readonly>
 # Maurizio
 > Ricordati degli amici, allego CV
 
-</textarea>
+</textarea> -->
 
+    <p>Ti abbiamo perso? Sei arrivato a leggere fino a qui senza distrarti? Non è un libro, è solo un biglietto d'auguri, dai tieni duro ancora un paio di righe e abbiamo finito.</p>
+    <p><mark>In bocca al lupo Smash</mark>, adesso secondo l'organizzazione dovrebbe uscire una donna da una torta. Nuda. O forse un uomo. Non lo sappiamo, in ogni caso tu sorridi e ricordati che abbiamo sete :)  </p>
+    <p>&nbsp;</p>
     <hr>
 
   </section>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      // If we need pagination
+      // pagination: {
+      //   el: '.swiper-pagination',
+      // },
+
+      // Navigation arrows
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
 </body>
 
 </html>
